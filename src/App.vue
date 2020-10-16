@@ -2,7 +2,7 @@
   <div class="picture-wrapper">
     <ul class="image-list">
       <li class="image-item" v-for="image of imageList" :key="image.name">
-        <img class="image-item__image" :src="image.path" alt="image.filename">
+        <img class="image-item__image" :src="image.path" :alt="image.filename">
         <div class="mask">
           <button class="view" @click="handleView(image)">查看</button>
           <button class="view" @click="handleCopy(image)">拷贝</button>
